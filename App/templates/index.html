@@ -3,6 +3,7 @@
 {% block title %}Login - UWI Statistical Digest Portal{% endblock %}
 
 {% block content %}
+<body class="bg-[#6b7f87] min-h-screen flex items-center justify-center p-4">
 <div class="flex rounded-lg overflow-hidden w-full  max-w-2xl max-h-2xl shadow-lg">
   <!-- Left -->
   <div class="relative w-1/2 rounded-l-lg overflow-hidden">
@@ -21,7 +22,7 @@
     <form method="POST" action="/login" class="flex flex-col space-y-4">
       <input name="username" value="bob" class="bg-[#a3a3a3] text-xs text-[#4a4a4a] placeholder-[#4a4a4a] rounded px-3 py-2 focus:outline-none" placeholder="Username" value="bobpass" type="text" required />
       <input name="password" class="bg-[#a3a3a3] text-xs text-[#4a4a4a] placeholder-[#4a4a4a] rounded px-3 py-2 focus:outline-none" placeholder="Password" type="password" required />
-      <button class="bg-[#e6e6e6] text-[#bfbfbf] text-xs rounded py-2 hover:opacity-90" type="submit">Login</button>
+      <button class="bg-[#e6e6e6] text-[#6b7f87] text-xs rounded py-2 hover:opacity-90" type="submit">Login</button>
     </form>
 
     <div class="flex items-center my-6 text-[#bfbfbf] text-xs">
@@ -35,4 +36,5 @@
     </div>
   </div>
 </div>
+</body>
 {% endblock %}
